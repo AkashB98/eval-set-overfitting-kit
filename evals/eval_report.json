@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "gap_positive_small_dev": true,
+    "gap_shrinks_with_dev_size": true,
+    "gap_ci_excludes_zero_small_dev": true,
+    "thresholdout_shrinks_gap": true,
+    "thresholdout_keeps_most_true_quality": true,
+    "queries_within_budget": true
+  },
+  "passed": 6,
+  "total": 6,
+  "experiment": {
+    "dev_sizes": {
+      "25": {
+        "mean_gap": 0.1929,
+        "ci95": [
+          0.1691,
+          0.2166
+        ],
+        "mean_true_quality": 0.677
+      },
+      "100": {
+        "mean_gap": 0.1061,
+        "ci95": [
+          0.092,
+          0.1201
+        ],
+        "mean_true_quality": 0.701
+      },
+      "400": {
+        "mean_gap": 0.042,
+        "ci95": [
+          0.0373,
+          0.0467
+        ],
+        "mean_true_quality": 0.782
+      }
+    },
+    "thresholdout": {
+      "n_dev": 100,
+      "plain_mean_gap": 0.1061,
+      "thresholdout_mean_gap": -0.0023,
+      "plain_mean_true_quality": 0.701,
+      "thresholdout_mean_true_quality": 0.8,
+      "mean_queries_used": 60.0,
+      "query_budget": 200
+    }
+  }
+}
